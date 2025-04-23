@@ -8,7 +8,7 @@ public class MortageCalculator {
         // System.in what user tupes into terminal
         Scanner scanner = new Scanner(System.in);
         // Range for Principal $1,000 - $ 1M
-        int principal = 0;
+        int principal;
         while (true) {
             System.out.print("Principal: ");
             principal = scanner.nextInt();
@@ -17,7 +17,7 @@ public class MortageCalculator {
             System.out.print("Enter a value between $1000 and $1,000,000");
         }
         // Annual interest rate
-        float interestRate = 0;
+        float interestRate;
         while (true) {
             System.out.print("Annual Interest Rate: ");
             interestRate = scanner.nextFloat();
@@ -32,7 +32,7 @@ public class MortageCalculator {
         float monthlyInterest = (interestRate/100) / 12;
 
         // Period (years)
-        int period = 0;
+        int period;
         while (true) {
             System.out.print("Period(years): ");
             period = scanner.nextInt();
