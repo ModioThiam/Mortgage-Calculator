@@ -7,12 +7,24 @@ public class MortageCalculator {
         // same scanner can read multiple inputs
         // System.in what user tupes into terminal
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Principal: ");
-        int principal = scanner.nextInt();
-
+        // Range for Principal $1,000 - $ 1M
+        int principal = 0;
+        while (true) {
+            System.out.print("Principal: ");
+            principal = scanner.nextInt();
+            if (principal > 1000 && principal <= 1000000)
+                break;
+            System.out.print("Enter a value between $1000 and $1,000,000");
+        }
         // Annual interest rate
-        System.out.print("Annual Interest Rate: ");
-        float interestRate = scanner.nextFloat();
+        float interestRate = 0;
+        while (true) {
+            System.out.print("Annual Interest Rate: ");
+            interestRate = scanner.nextFloat();
+            if (interestRate > 0 && interestRate <= 30)
+                break;
+            System.out.println("Enter an interest rate between 0 and 30");
+        }
 
         // divide by 100 and then 12 to get monthly interest rate
         // converting percent to decimal first
@@ -20,8 +32,15 @@ public class MortageCalculator {
         float monthlyInterest = (interestRate/100) / 12;
 
         // Period (years)
-        System.out.print("Period(years): ");
-        int period = scanner.nextInt();
+        int period = 0;
+        while (true) {
+            System.out.print("Period(years): ");
+            period = scanner.nextInt();
+            if (period > 0 && period <= 30)
+                break;
+            System.out.println("Please enter a value between 0 and 30.");
+        }
+
 
         // multiply period by 12 to get total monthly payments
         int monthlyPeriod = (period * 12);

@@ -1,12 +1,16 @@
 Mortage Calculator! 
 
-This is a simple Java-based mortgage calculator.
-Users input the loan principal, the annual interest rate, and the loan period (in years). 
-Then it calculates and displays the monthly payment using the amortization formula. 
+This is a simple console-based Java-based mortgage calculator that calculates monthly mortage payments using amortization formula.
 
-Usage of scanner, mathematical operations, conditional logic
+## Features
+- User input the loan principal, the annual interest rate, and the loan period (in years). 
+- Calculates monthly payment with basic math operations. 
+- Input validation to ensure correct user inputs
+- Use of core Java tools: Scanner, Math, NumberFormat
 
-To Run: 
-Clone Repo, or Download .java file from repository. 
-Open Project in preferred Java IDE with correct Java version installed
-Run MortgageCalculator.java file. 
+
+## To Run: 
+- Clone Repository or Download .java file. 
+- Open Project in preferred Java IDE (IntelliJ recommended) 
+- Java 17+ version installed
+- Run MortgageCalculator.java file from IDE or in terminal. 
